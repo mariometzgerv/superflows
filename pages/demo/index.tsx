@@ -12,7 +12,7 @@ export default function Demo() {
       <SuperflowsButton
         superflowsUrl={process.env.NEXT_PUBLIC_SUPERFLOWS_URL}
         superflowsApiKey={process.env.NEXT_PUBLIC_SUPERFLOWS_API_KEY as string}
-        userApiKey={process.env.SERVICE_LEVEL_KEY_SUPABASE}
+        userApiKey={process.env.NEXT_PUBLIC_SUPERFLOWS_BACKEND}
       ></SuperflowsButton>
     </div>
   );
