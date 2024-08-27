@@ -8,12 +8,6 @@ export default function Demo() {
   const { profile } = useProfile();
   const router = useRouter();
 
-  if (profile === undefined) return <LoadingPage />;
-  else if (!profile?.org_id) {
-    router.push("/onboarding");
-    return <LoadingPage />;
-  }
-
   return (
     <div>
       <SuperflowsButton
